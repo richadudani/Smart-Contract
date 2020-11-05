@@ -27,7 +27,10 @@ contract DeferredEquityPlan {
         human_resources = msg.sender;
         employee = _employee;
     }
-
+    function fastforward() public {
+        fakenow += 100 days;
+    }
+    
     function distribute() public {
         require(msg.sender == human_resources || msg.sender == employee, "You are not authorized to execute this contract.");
         require(active == true, "Contract not active.");
@@ -54,16 +57,14 @@ contract DeferredEquityPlan {
             distributed_shares = 1000;
         }
     }
-
+   
     // human_resources and the employee can deactivate this contract at-will
     function deactivate() public {
         require(msg.sender == human_resources || msg.sender == employee, "You are not authorized to deactivate this contract.");
         active = false;
     }
 
-    function fastforward() public {
-        fakenow += 100 days;
-    }
+   
 
     // Since we do not need to handle Ether in this contract, revert any Ether sent to the contract directly
     function() external payable {
