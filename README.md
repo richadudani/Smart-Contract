@@ -40,13 +40,13 @@ This will accept ether into the contract, and divide it evenly among associate-l
 
 After compiling the code in Remix, I deployed the contract to local Ganache chain by connecting to `Injected Web3` and ensured MetaMask was pointed to `localhost:8545`, with 0 wei. There was a fee charged to the Ether account.
 
-![Deployment](Images/Deployment.png)
+![Deployment](Images/Deployment.PNG)
 Next as the contract was activated, I filled the constructor parameters with designated addresses and tested the `deposit` functionality by transferring 31 Ether from account 2 into the accounts 1, 3 and 4.
 
-![Deposit](Images/Deposit.png)
+![Deposit](Images/Deposit.PNG)
 I checked the movement in balances/funds in Ganache before and after, it shows 31 Ether was taken from Account 2 and deposited equally into accounts 1, 3 and 4.
-![Pre-Deposit](Images/pre_deposit.png)
-![Post-Deposit](Images/post_deposit.png)
+![Pre-Deposit](Images/pre_deposit.PNG)
+![Post-Deposit](Images/post_deposit.PNG)
 
 ### Level Two: The `TieredProfitSplitter` Contract
 
@@ -60,15 +60,15 @@ In this contract, rather than splitting the profits between associate-level empl
 
 After compiling the code in Remix, I deployed the contract to local Ganache chain by connecting to `Injected Web3` and ensured MetaMask was pointed to `localhost:8545`, with 0 wei. There was a fee charged to the Ether account.
 
-![Deployment2](Images/Deployment2.png)
+![Deployment2](Images/Deployment2.PNG)
 
 Next as the contract was activated, I filled the constructor parameters with designated addresses and tested the `deposit` functionality by transferring 100 Ether from account 3 into the accounts 1, 2 and 4.
 
-![Deposit2](Images/Deposit2.png)
+![Deposit2](Images/Deposit2.PNG)
 
 I checked the movement in balances/funds in Ganache before and after, it shows 31 Ether was taken from Account 3 and deposited at a ratio of 60%, 25% and 15% to accounts 1, 2 and 4 respectively, minus the gas.
 
-![Post-Deposit](Images/post_deposit2.png)
+![Post-Deposit](Images/post_deposit2.PNG)
 
 ### <b> Level Three: The `DeferredEquityPlan` Contract </b>
 
@@ -93,13 +93,13 @@ This was done in below step manner.
 
 <i> Step 2 </i>: Deployed the contract to a live Testnet "Kovan"
 * Now I pointed MetaMask to Kovan, deployed the contract on "Kovan" network as before after ensuring I had transferred 1 ETH to the account 3 on this network!
-![Deployment3](Images/Deployment3.png)
+![Deployment3](Images/Deployment3.PNG)
 
 * Next I deployed in the same fashion as done previously 
-![Deployment3 Actual](Images/Deployment3_actual.png)
+![Deployment3 Actual](Images/Deployment3_actual.PNG)
 
 * I am unable to transfer because the fakenow was removed and I can only distribute the shares when 365 days have passed.
-![Unable to transfer](Images/unable_to_transfer.png)
+![Unable to transfer](Images/unable_to_transfer.PNG)
 
 * Finally The transactions will also be in my MetaMask history, and on the blockchain permanently to explore later.
 
