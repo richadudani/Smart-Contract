@@ -1,4 +1,4 @@
-# Unit 20 | Smart Contracts via Solidity
+# Smart Contracts via Solidity
 
 ![contract](Images/Smart-Contract-Illustration.jpg)
 
